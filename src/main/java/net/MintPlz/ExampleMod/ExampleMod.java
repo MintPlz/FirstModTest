@@ -21,6 +21,7 @@ import org.slf4j.Logger;
 
 @Mod(ExampleMod.MODID)
 public class ExampleMod {
+    //This is a test
     public static final String MODID = "examplemod";
     private static final Logger LOGGER = LogUtils.getLogger();
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
