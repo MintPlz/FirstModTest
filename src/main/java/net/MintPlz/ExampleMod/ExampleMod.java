@@ -63,6 +63,7 @@ public class ExampleMod {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.BLACK_OPAL_ORE);
         }
     }
 
