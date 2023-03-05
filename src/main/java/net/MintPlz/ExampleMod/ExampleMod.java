@@ -1,6 +1,7 @@
 package net.MintPlz.ExampleMod;
 
 import com.mojang.logging.LogUtils;
+import net.MintPlz.ExampleMod.item.ModBlocks;
 import net.MintPlz.ExampleMod.item.ModCreativeModeTabs;
 import net.MintPlz.ExampleMod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -39,6 +40,7 @@ public class ExampleMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -60,6 +62,7 @@ public class ExampleMod {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS || event.getTab() == ModCreativeModeTabs.MODTAB) {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
         }
     }
 
