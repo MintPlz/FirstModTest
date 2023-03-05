@@ -1,6 +1,7 @@
 package net.MintPlz.ExampleMod;
 
 import com.mojang.logging.LogUtils;
+import net.MintPlz.ExampleMod.item.ModCreativeModeTabs;
 import net.MintPlz.ExampleMod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -56,8 +57,9 @@ public class ExampleMod {
 
     @SubscribeEvent
     public void addCreative(CreativeModeTabEvent.BuildContents event) {
-        if(event.getTab() == CreativeModeTabs.INGREDIENTS) {
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS || event.getTab() == ModCreativeModeTabs.MODTAB) {
             event.accept(ModItems.BLACK_OPAL);
+            event.accept(ModItems.RAW_BLACK_OPAL);
         }
     }
 
