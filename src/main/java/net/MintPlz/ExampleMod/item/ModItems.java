@@ -1,7 +1,6 @@
 package net.MintPlz.ExampleMod.item;
 
 import net.MintPlz.ExampleMod.ExampleMod;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
