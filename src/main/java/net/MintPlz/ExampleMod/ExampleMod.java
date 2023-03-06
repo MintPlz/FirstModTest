@@ -62,6 +62,7 @@ public class ExampleMod {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS || event.getTab() == ModCreativeModeTabs.MODTAB) {
             event.accept(ModItems.BLACK_OPAL);
             event.accept(ModItems.RAW_BLACK_OPAL);
+            event.accept(ModItems.BLACK_OPAL_PICKAXE);
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
             event.accept(ModBlocks.BLACK_OPAL_ORE);
         }
