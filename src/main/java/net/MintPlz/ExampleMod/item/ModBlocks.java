@@ -21,11 +21,11 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BLACK_OPAL_BLOCK = registerBlock("black_opal_block",
             () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
-    //NIKKI YOU STILL NEED TO WORK ON THE BLACK_OPAL_ORE BLOCK!!!
+                    .strength(0.2f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+
     public static final RegistryObject<Block> BLACK_OPAL_ORE = registerBlock("black_opal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.of(Material.AMETHYST)
-                    .strength(6f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST), UniformInt.of(2, 6)));
+                    .strength(0.6f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST), UniformInt.of(2, 6)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
