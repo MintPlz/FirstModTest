@@ -24,6 +24,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_BLACK_OPAL = ITEMS.register("raw_black_opal",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> BLACK_OPAL_SWORD = ITEMS.register("black_opal_sword",
+            () -> new SwordItem(BLACKOPAL, 100, -2.4F, new Item.Properties()));
+
     public static final RegistryObject<Item> BLACK_OPAL_PICKAXE = ITEMS.register("black_opal_pickaxe",
             () -> new PickaxeItem(BLACKOPAL, 1, -2.8f, (new Item.Properties())));
 
