@@ -33,6 +33,9 @@ public class ModItems {
     public static final RegistryObject<Item> BLACK_OPAL_SHOVEL = ITEMS.register("black_opal_shovel",
             () -> new ShovelItem(BLACKOPAL, 1.5F, -3.0F, new Item.Properties()));
 
+    public static final RegistryObject<Item> BLACK_OPAL_AXE = ITEMS.register("black_opal_axe",
+            () -> new AxeItem(BLACKOPAL, 5.0F, -3.0F, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
