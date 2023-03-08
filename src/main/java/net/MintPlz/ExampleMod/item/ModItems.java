@@ -9,6 +9,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.rmi.registry.Registry;
+
 public class ModItems {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MODID);
@@ -35,6 +37,9 @@ public class ModItems {
 
     public static final RegistryObject<Item> BLACK_OPAL_AXE = ITEMS.register("black_opal_axe",
             () -> new AxeItem(BLACKOPAL, 5.0F, -3.0F, new Item.Properties()));
+
+    public static final RegistryObject<Item> BLACK_OPAL_HOE = ITEMS.register("black_opal_hoe",
+            () -> new HoeItem(BLACKOPAL, -4, 0, new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
