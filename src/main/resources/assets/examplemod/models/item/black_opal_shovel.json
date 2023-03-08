@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "examplemod:item/black_opal_shovel"
+  }
+}

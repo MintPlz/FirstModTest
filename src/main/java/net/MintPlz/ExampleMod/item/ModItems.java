@@ -30,6 +30,9 @@ public class ModItems {
     public static final RegistryObject<Item> BLACK_OPAL_PICKAXE = ITEMS.register("black_opal_pickaxe",
             () -> new PickaxeItem(BLACKOPAL, 1, -2.8f, (new Item.Properties())));
 
+    public static final RegistryObject<Item> BLACK_OPAL_SHOVEL = ITEMS.register("black_opal_shovel",
+            () -> new ShovelItem(BLACKOPAL, 1.5F, -3.0F, new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -64,6 +64,7 @@ public class ExampleMod {
             event.accept(ModItems.RAW_BLACK_OPAL);
             event.accept(ModItems.BLACK_OPAL_PICKAXE);
             event.accept(ModItems.BLACK_OPAL_SWORD);
+            event.accept(ModItems.BLACK_OPAL_SHOVEL);
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
             event.accept(ModBlocks.BLACK_OPAL_ORE);
         }
